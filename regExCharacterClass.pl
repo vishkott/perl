@@ -16,6 +16,7 @@ if($string =~ /[^aeiou]/){
 print("Found a consonant\n");
 }
 
+# These are pattern abbreviations
 # \w denotes [0-9a-zA-Z]
 # \s denotes (tab space etc)
 # \d denotes [0-9]
