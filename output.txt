@@ -1,0 +1,4 @@
+1 : hi my name is vish
+2 : I live in westminster
+3 : I work in irvine
+4 : I went to USC
