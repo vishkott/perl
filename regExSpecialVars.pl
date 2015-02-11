@@ -1,7 +1,7 @@
 #special varialbes
-# $` - String matching prior to the current match.
-# $& - String matching to the current match.
-# $` - String matching post to the current match.
+# $` - Pre match 
+# $& - Present match
+# $` - Post match
 
 $_ = "abcdefghi";
 
