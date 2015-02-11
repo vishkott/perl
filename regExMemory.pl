@@ -1,5 +1,5 @@
 $string = "Ram and Shyam are honest";
-print $string."\n";
+print "Original string: $string\n";
 
 #Anchor at the beginning
 $string =~ /^(\w*)/;
@@ -30,3 +30,18 @@ print "$1 $2\n";
 
 $string =~ /^(\w?)\s?(\w?)/;
 print "$1 $2\n";
+
+#Check for repetition
+$string = "Ram and Shyam are poor";
+print "Original string: $string\n";
+if($string =~ /(\w)\1/){
+    print "Found 2 in a row - $1\n";
+}
+
+if($string =~ /(\w+).*\1/){
+    print "Found repeating - $1\n";
+}
+
+#swapping Ram and Shyam
+$string =~ s/(\w+) and (\w+)/$2 and $1/;
+print "Swapped the names: $string\n";
