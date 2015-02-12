@@ -19,4 +19,15 @@ print "\nModified array after deleting work phone number: @array\n";
 
 %reverseDirectory = reverse %directory;
 
-print "9493948704 belongs to $reverseDirectory{'9493948704'}\n\n"
+print "9493948704 belongs to $reverseDirectory{'9493948704'}\n\n";
+
+@keys = keys %directory;
+@values = values %directory;
+
+print "All keys of the associative array: @keys\n";
+print "All values of the associative array: @values\n\n";
+
+foreach $name (@keys){
+    print "$name \t $directory{$name}\n";
+}
+print "\n";
